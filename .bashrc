@@ -131,6 +131,8 @@ if [ -f ~/repos/workflow/git-completion.bash ]; then
   __git_complete gp _git_push
   __git_complete gc _git_commit
   __git_complete ga _git_add
+  __git_complete gd _git_diff
+  __git_complete gdc _git_diff
 fi
 
 # Make sure you actually have those aliases defined, of course.
@@ -141,7 +143,8 @@ alias gp="git push"
 alias gc="git commit"
 alias ga="git add"
 alias gs="git status"
-
+alias gd="git diff"
+alias gdc="git diff --cached"
 
 #PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 export GIT_PS1_SHOWCOLORHINTS="yes"
