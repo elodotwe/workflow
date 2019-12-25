@@ -1,0 +1,6 @@
+XTerm.termName: xterm-256color
+XTerm.vt100.faceName: terminus
+XTerm.vt100.faceSize: 10
+XTerm.vt100.background: black
+XTerm.vt100.foreground: white
+XTerm.vt100.visualBell: true
