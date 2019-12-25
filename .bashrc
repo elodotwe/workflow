@@ -146,6 +146,11 @@ alias gs="git status"
 alias gd="git diff"
 alias gdc="git diff --cached"
 
+alias vi="vim"
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 #PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 export GIT_PS1_SHOWCOLORHINTS="yes"
 export GIT_PS1_SHOWDIRTYSTATE="yes"
