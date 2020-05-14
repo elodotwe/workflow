@@ -61,7 +61,7 @@ source ~/repos/workflow/git-prompt.sh
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 " (%s)")\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$(__git_ps1 " (%s)")$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(__git_ps1 " (%s)")$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -145,6 +145,11 @@ alias ga="git add"
 alias gs="git status"
 alias gd="git diff"
 alias gdc="git diff --cached"
+
+alias vi="vim"
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 #PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 export GIT_PS1_SHOWCOLORHINTS="yes"
